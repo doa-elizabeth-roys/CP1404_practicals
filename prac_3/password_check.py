@@ -9,7 +9,7 @@ def main() :
 ACTUAL_LENGTH = len(password)
 
 def print_asterisks():
-    def print_asterisk(ACTUAL_LENGTH)
+    def print_asterisk(ACTUAL_LENGTH):
 
 #while not valid_input :
     if ACTUAL_LENGTH < MIN_LENGTH :
