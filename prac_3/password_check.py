@@ -1,23 +1,19 @@
 MIN_LENGTH = 8
+
 def main() :
-    get_password ()
-  # valid_input = False
+ password = get_password(MIN_LENGTH)
+ print_asterisks(ACTUAL_LENGTH)
 
-#def get_password()
+ACTUAL_LENGTH = len(password )
 
-   password = get_password ()
-ACTUAL_LENGTH = len(password)
+  if ACTUAL_LENGTH < MIN_LENGTH :
+    print ( "Enter a password with atleast {} characters".format ( MIN_LENGTH ) )
+    password = input ( "Enter password: " )
+  else :
+    print_asterisk(ACTUAL_LENGTH)
 
-def print_asterisks():
-    def print_asterisk(ACTUAL_LENGTH):
-
-#while not valid_input :
-    if ACTUAL_LENGTH < MIN_LENGTH :
-        print ( "Enter a password with atleast {} characters".format ( MIN_LENGTH ) )
-        password = input ( "Enter password: " )
-    else :
-    def print_asterisk(ACTUAL_LENGTH)
-        for i in range ( len ( password ) ) :
-            print ( "*", end='' )
-        valid_input = True
+def print_asterisk(ACTUAL_LENGTH):
+  for i in range (len( password )):
+   print ( "*", end='' )
 main ()
+
