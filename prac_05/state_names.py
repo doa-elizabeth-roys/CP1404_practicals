@@ -18,5 +18,5 @@ while state_code != "":
     state_code = input("Enter short state: ").upper()
 
 # A loop that prints all of the states and names neatly lined up with string formatting
-for key,value in CODE_TO_NAME.items():
-    print(key,"is",value)
+for statecode,statename in CODE_TO_NAME.items():
+    print(statecode,"is",statename)
