@@ -8,6 +8,6 @@ for word in words:
 words = list(word_count_dict.keys())
 words.sort()
 # use the max function to find the length of the largest word
-max_length = max((len(word) for word in words))
+length_of_longest_word = max((len(word) for word in words))
 for word in words:
-    print("{:{}} : {}".format(word, max_length, word_count_dict[word]))
+    print("{:{}} : {}".format(word, length_of_longest_word, word_count_dict[word]))
