@@ -17,7 +17,6 @@ class ProgrammingLanguage:
         return ("{}, {} Typing, Reflection ={}, First appeared in {}".format(self.name, self.typing, self.reflection,
                                                                              self.year))
 
-
 # Loop through and print the names of all of the languages with dynamic typing
 ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
 python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
