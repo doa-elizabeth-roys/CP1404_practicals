@@ -1,7 +1,7 @@
 from prac_06.guitar import Guitar
 
 def main():
-    """Guitar program"""
+    """Get details of Guitar from user and print it."""
     guitars = []
     print("My guitars!")
     name = input("Name : ")
@@ -9,8 +9,7 @@ def main():
        year = input("Year : ")
        cost = input("Cost :$ ")
        print("{} ({}) : ${} added".format(name, year, cost))
-       guitar_input = Guitar(name, year, cost)
-       guitars.append(guitar_input)
+       guitars = Guitar(name, year, cost)
        name = input("Name : ")
 
     guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
