@@ -1,0 +1,26 @@
+BoxLayout:
+    orientation:'vertical'
+    BoxLayout:
+        orientation:'horizontal'
+        TextInput:
+            id:user_input
+            text: '100'
+            on_text:app.handle_conversion()
+            multiline: False
+            font_size:15
+        BoxLayout:
+            orientation:'vertical'
+            Button:
+                text:'Up'
+                on_press: app.handle_increment(1)
+            Button:
+                text:'Down'
+                on_press: app.handle_increment(-1)
+#    Button:
+#        text:'Convert  miles to kilometer'
+#        on_press:app.handle_conversion()
+    Label:
+        id: output_label
+        text: '160.934'
+        font_size:35
+        color: (1, 1, 0, 1)
