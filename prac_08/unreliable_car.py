@@ -16,7 +16,6 @@ class UnreliableCar(Car):
         """
         if number < self.reliability:
             self.distance = self.fuel
-            self.fuel = 0
         else:
             self.distance = 0
         return self.distance
