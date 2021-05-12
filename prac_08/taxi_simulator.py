@@ -36,10 +36,10 @@ def main():
             print(MENU)
             choice = input().lower()
          else:
-          print("Please choose a taxi first")
-
-
-        else:
+           print("Please choose a taxi first")
+           print(MENU)
+           choice = input().lower()
+        else:                             #when drive is choosed at first
              print("Invalid choice")
              print("Bill to date: ${:.2f}".format(total_cost))
              print(MENU)
