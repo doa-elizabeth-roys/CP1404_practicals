@@ -63,6 +63,8 @@ def phrase_to_sentence(phrase):
     'Hello.'
     >>> phrase_to_sentence('It is an ex parrot.')
     'It is an ex parrot.'
+    >>>phrase_to_sentence('The practice of computing using Python')
+    'The practice of computing using Python.'
     """
     sentence = phrase.capitalize()
     if sentence[-1] != '.':
