@@ -51,11 +51,9 @@ run_tests()
 
 
 # starting with a capital and ending with a single full stop.
-# Important: start with a function header and just use pass as the body
+#start with a function header and just use pass as the body
 # 'hello' -> 'Hello.'
 # 'It is an ex parrot.' -> 'It is an ex parrot.'
-# and one more you decide (one that is valid!)
-# test this and watch the tests fail
 def phrase_to_sentence(phrase):
     """
     Format a phrase as a sentence.
@@ -63,12 +61,12 @@ def phrase_to_sentence(phrase):
     'Hello.'
     >>> phrase_to_sentence('It is an ex parrot.')
     'It is an ex parrot.'
-    >>>phrase_to_sentence('The practice of computing using Python')
-    'The practice of computing using Python.'
+    >>> phrase_to_sentence('The practice of computing using Python')
+    'The practice of computing using python.'
     """
     sentence = phrase.capitalize()
     if sentence[-1] != '.':
-        sentence += '.'
+        sentence = sentence + '.'
     return sentence
 
 doctest.testmod()
